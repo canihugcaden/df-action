@@ -1,0 +1,19 @@
+name: Download
+
+on: [push]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: download
+        run: |
+          wget http://www.bay12games.com/dwarves/df_47_05_win.zip
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: |
+            df_47_05_win.zip
