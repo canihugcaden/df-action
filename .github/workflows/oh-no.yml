@@ -16,4 +16,4 @@ jobs:
         with:
           name: dist
           path: |
-            https://cdn.openttd.org/opensfx-releases/1.0.3/opensfx-1.0.3-all.zip
+            opensfx-1.0.3-all.zip
