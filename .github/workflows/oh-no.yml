@@ -16,4 +16,4 @@ jobs:
         with:
           name: dist
           path: |
-            opensfx-1.0.3-all.zip
+            DungeonMastersGuide.pdf
